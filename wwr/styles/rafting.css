@@ -9,6 +9,7 @@
     --hover-color: #E8D721; 
     --border-radius: 8px; /* Default border radius for rounded corners */
 }
+
 h1, h2 {
     font-family: 'Playfair Display', serif; 
     color: var(--primary-color);
@@ -38,6 +39,7 @@ body {
     color: var(--text-color); 
     font-family: 'Arial', sans-serif; 
 }
+
 /* Header using CSS Grid */
 header {
     display: grid;
@@ -68,14 +70,12 @@ nav a {
     padding: 10px 15px;
     border-radius: var(--border-radius);
     transition: background-color 0.3s ease-in-out;
-
 }
 
 nav a:hover {
     background-color: var(--hover-color);
     color: var(--primary-color);
 }
-
 
 header, main, footer {
     max-width: 1200px; 
@@ -84,31 +84,56 @@ header, main, footer {
 
 /* Hero Section Styling */
 .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
-    text-align: left; 
-    height: 400px;
-    background-color: var(--secondary-color);
-    color: var(--footer-text-color);
-    padding: 20px;
-    gap: 20px; 
+    gap: 20px;
 }
 
-/* Left Side (Text) */
-.hero-content {
-    flex: 1; 
-    max-width: 50%; 
+.article-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
 }
 
-/* Hero Image */
-.hero img {
-    width: 40%; 
-    max-width: 500px; 
-    height: auto; 
-    border-radius: var(--border-radius);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    object-fit: cover;
+.hero article p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    flex: 1;
 }
 
 .history {
@@ -119,14 +144,12 @@ header, main, footer {
     margin: auto;
 }
 
-/* Center-align h2 */
 .history h2 {
     font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 20px;
 }
 
-/* Layout for the content */
 .history-content {
     display: flex;
     align-items: center; 
@@ -135,7 +158,6 @@ header, main, footer {
     text-align: justify;
 }
 
-/* Image Styling */
 .history-content img {
     width: 250px; 
     height: auto;
@@ -143,13 +165,11 @@ header, main, footer {
     display: block;
 }
 
-/* Text Styling */
 .history-content p {
     flex: 1; 
     font-size: 1rem;
     line-height: 1.5;
 }
-
 
 .adventure {
     padding: 40px 0;
@@ -189,4 +209,11 @@ figcaption {
     font-weight: bold;
     text-transform: uppercase;
     color: #333;
+}
+.sociallinks a img {
+    width: 24px; /* Adjust the size of the icons */
+    height: auto;
+}
+.sociallinks a {
+    margin: 0 10px; /* Add spacing between icons */
 }
