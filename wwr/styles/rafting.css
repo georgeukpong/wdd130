@@ -217,3 +217,22 @@ figcaption {
 .sociallinks a {
     margin: 0 10px; /* Add spacing between icons */
 }
+
+.employees {
+    display: flex; /* Arrange items in a horizontal line */
+    justify-content: space-around; /* Add space between figures */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow wrapping if screen size is small */
+    margin: 20px 0;
+}
+
+.employees figure {
+    text-align: center; /* Center align the text under each image */
+    margin: 0 10px; /* Add some spacing between figures */
+}
+
+.employees img {
+    max-width: 150px; /* Adjust the image width */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+}

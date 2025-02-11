@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with us for inquiries or assistance at A-Z Rafting Adventures.">
+    <meta name="author" content="George Ukpong">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Contact Us - A-Z Rafting Adventures</title>
+</head>
+<body>
+    <header>
+        <img src="images/az-splash.png" alt="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Feel free to reach out using the information below or fill out the contact form.</p>
+        
+        <section>
+            <h2>Our Contact Information</h2>
+            <p>A-Z Rafting Adventures</p>
+            <p><strong>Phone:</strong> +234-800-123-4567</p>
+            <p><strong>Email:</strong> info@azrafting.com</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63058.41301933076!2d7.3537638!3d8.9582477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e724ce523c71b%3A0xd9e4fb48232178e7!2sLugbe%20900107%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1739285298657!5m2!1sen!2sng" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="employees">
+                <figure>
+                    <img src="images/contactimg1.jpg" alt="Employee 1">
+                    <figcaption>John Uchena - Customer Support Specialist</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/contactimg2.jpg" alt="Employee 2">
+                    <figcaption>Onyinyechi Ede - Adventure Coordinator</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/contactimg3.jpg" alt="Employee 3">
+                    <figcaption>Uforo Uko - Rafting Guide</figcaption>
+                </figure>
+            </div>
+            
+        </section>
+
+        <section>
+            <h2>Contact Form</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="general_inquiry" required>
+                        General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="reservation_question">
+                        Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="website_suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                <label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&COPY; 2025 🦾 A-Z Rafting 🦾 George Ukpong</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.webp" alt="Instagram">
+            </a>
+            <a href="https://youtube.com">
+                <img src="images/youtube.webp" alt="YouTube">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>

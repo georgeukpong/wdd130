@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 130 | HTML Form – User Poll</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
+</head>
+<body>
+<header>
+    <h1>WDD 130 | George Ukpong | HTML Form – User Poll</h1>
+</header>
+<main>
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label>Full Name: <input type="text" name="fullname"></label>
+            <label>Email: <input type="email" name="useremail"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Questions</legend>
+            <label for="browser">What is your favorite internet browser?</label>
+            <select id="browser" name="browser">
+                <option value="chrome">Chrome</option>
+                <option value="firefox">Firefox</option>
+                <option value="safari">Safari</option>
+                <option value="edge">Edge</option>
+                <option value="brave">Brave</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="pet">Do you have a household pet?</label>
+            <input type="checkbox" id="pet" name="pet">
+            <label for="feedback">List the places you have lived:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="National Stadium Abuja, Calabar City, Ibeno Beach Akwa Ibom"></textarea>
+        </fieldset>
+        <button type="submit">Submit Poll</button>
+        
+    </form>
+</main>
+<footer>
+    <p>©2025 | HTML Form - User Poll Activity | George Ukpong</p>
+</footer>
+</body>
+</html>
