@@ -6,6 +6,7 @@
     <meta name="description" content="Get in touch with us for inquiries or assistance at A-Z Rafting Adventures.">
     <meta name="author" content="George Ukpong">
     <link rel="stylesheet" href="styles/rafting.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>Contact Us - A-Z Rafting Adventures</title>
 </head>
 <body>
@@ -29,60 +30,67 @@
             <p><strong>Phone:</strong> +234-800-123-4567</p>
             <p><strong>Email:</strong> info@azrafting.com</p>
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63058.41301933076!2d7.3537638!3d8.9582477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e724ce523c71b%3A0xd9e4fb48232178e7!2sLugbe%20900107%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1739285298657!5m2!1sen!2sng" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63058.41301933076!2d7.3537638!3d8.9582477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e724ce523c71b%3A0xd9e4fb48232178e7!2sLugbe%20900107%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1739285298657!5m2!1sen!2sng" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="employees">
+            <div id="employees" class="employees">
                 <figure>
-                    <img src="images/contactimg1.jpg" alt="Employee 1">
+                    <img id="employee1" src="images/contactimg1.jpg" alt="Employee 1">
                     <figcaption>John Uchena - Customer Support Specialist</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/contactimg2.jpg" alt="Employee 2">
+                    <img id="employee2" src="images/contactimg2.jpg" alt="Employee 2">
                     <figcaption>Onyinyechi Ede - Adventure Coordinator</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/contactimg3.jpg" alt="Employee 3">
+                    <img id="employee3" src="images/contactimg3.jpg" alt="Employee 3">
                     <figcaption>Uforo Uko - Rafting Guide</figcaption>
                 </figure>
             </div>
-            
         </section>
-
+        
         <section>
             <h2>Contact Form</h2>
             <form action="submit_form.php" method="post">
+                <!-- Name Input -->
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Your Full Name" required>
-
+        
+                <!-- Email Input -->
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Your Email Address" required>
-
+        
+                <!-- Purpose of Message -->
                 <fieldset>
                     <legend>Purpose of Message:</legend>
-                    <label>
-                        <input type="radio" name="purpose" value="general_inquiry" required>
+                    <label for="general_inquiry">
+                        <input type="radio" id="general_inquiry" name="purpose" value="general_inquiry" required>
                         General Inquiry
                     </label>
-                    <label>
-                        <input type="radio" name="purpose" value="reservation_question">
+                    <label for="reservation_question">
+                        <input type="radio" id="reservation_question" name="purpose" value="reservation_question">
                         Reservation Question
                     </label>
-                    <label>
-                        <input type="radio" name="purpose" value="website_suggestion">
+                    <label for="website_suggestion">
+                        <input type="radio" id="website_suggestion" name="purpose" value="website_suggestion">
                         Website Suggestion
                     </label>
                 </fieldset>
-
+        
+                <!-- Message Textarea -->
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                <label>
+        
+                <!-- Newsletter Checkbox -->
+                <label for="newsletter">
                     <input type="checkbox" id="newsletter" name="newsletter">
                     Please subscribe me to the monthly newsletter
                 </label>
                 
-                <button type="submit">Send Message</button>
+                <!-- Submit Button -->
+                <button type="submit" id="submit_button">Send Message</button>
             </form>
         </section>
+        
     </main>
 
     <footer>
