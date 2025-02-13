@@ -27,14 +27,26 @@
         <h1>Contact Us</h1>
         <p>We'd love to hear from you! Feel free to reach out using the information below or fill out the contact form.</p>
         
-        <section>
-            <h2>Our Contact Information</h2>
-            <p>A-Z Rafting Adventures</p>
-            <p><strong>Phone:</strong> +234-800-123-4567</p>
-            <p><strong>Email:</strong> info@azrafting.com</p>
-            <div class="map">
-                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63058.41301933076!2d7.3537638!3d8.9582477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e724ce523c71b%3A0xd9e4fb48232178e7!2sLugbe%20900107%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1739285298657!5m2!1sen!2sng" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        <section class="contact-section">
+    <div class="contact-info">
+        <h2>Headquarters</h2>
+        <p>Lugbe, Abuja Nigeria</p>
+        <ul>
+            <li><span class="icon">📍</span> Lugbe, kabusa abuja</li>
+            <li><span class="icon">✉️</span> <strong>Email:</strong> info@azrafting.com</li>
+            <li><span class="icon">📞</span> +234-800-123-4567</li>
+        </ul>
+    </div>
+    <div class="map">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63058.41301933076!2d7.3537638!3d8.9582477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e724ce523c71b%3A0xd9e4fb48232178e7!2sLugbe%20900107%2C%20Federal%20Capital%20Territory!5e0!3m2!1sen!2sng!4v1739285298657!5m2!1sen!2sng" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+        
+        
+        
+        
+            <section>
             <div id="employees" class="employees">
                 <figure>
                     <img id="employee1" src="images/contactimg1.jpg" alt="Employee 1">
@@ -51,48 +63,60 @@
             </div>
         </section>
         
-        <section>
+        <section class="contact-form-section">
             <h2>Contact Form</h2>
-            <form action="submit_form.php" method="post">
-                <!-- Name Input -->
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
-        
-                <!-- Email Input -->
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
-        
+            <form action="submit_form.php" method="post" class="contact-form">
                 <!-- Purpose of Message -->
-                <fieldset>
-                    <legend>Purpose of Message:</legend>
-                    <label for="general_inquiry">
-                        <input type="radio" id="general_inquiry" name="purpose" value="general_inquiry" required>
-                        General Inquiry
-                    </label>
-                    <label for="reservation_question">
-                        <input type="radio" id="reservation_question" name="purpose" value="reservation_question">
-                        Reservation Question
-                    </label>
-                    <label for="website_suggestion">
-                        <input type="radio" id="website_suggestion" name="purpose" value="website_suggestion">
-                        Website Suggestion
-                    </label>
+                <fieldset class="purpose-fieldset">
+                    <legend>Purpose of Message</legend>
+                    <div class="purpose-options">
+                        <label>
+                            <input type="radio" name="purpose" value="general_inquiry" required>
+                            General Inquiry
+                        </label>
+                        <label>
+                            <input type="radio" name="purpose" value="reservation_question">
+                            Reservation Question
+                        </label>
+                        <label>
+                            <input type="radio" name="purpose" value="website_suggestion">
+                            Website Suggestion
+                        </label>
+                    </div>
                 </fieldset>
         
+                <!-- Name and Email Input -->
+                <div class="input-row">
+                    <div class="input-field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    </div>
+                </div>
+        
                 <!-- Message Textarea -->
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                <div class="textarea-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                </div>
         
                 <!-- Newsletter Checkbox -->
-                <label for="newsletter">
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    Please subscribe me to the monthly newsletter
-                </label>
-                
+                <div class="checkbox-field">
+                    <label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+                </div>
+        
                 <!-- Submit Button -->
-                <button type="submit" id="submit_button">Send Message</button>
+                <button type="submit" class="submit-button">Send</button>
             </form>
         </section>
+        
+        
         
     </main>
 
@@ -109,6 +133,11 @@
                 <img src="images/youtube.webp" alt="YouTube">
             </a>
         </nav>
+        <div class="footer-link">
+            <a href="https://app.moqups.com/QtJgKG46TgQJuJxOXPugIg5x2T73a1Ak/view/page/ad12de680" target="_blank">
+                View Moqups Project
+            </a>
+        </div>
     </footer>
 </body>
 </html>
