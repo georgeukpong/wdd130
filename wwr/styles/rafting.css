@@ -110,7 +110,7 @@ header, main, footer {
 .hero-about h1,
 .hero-trip h1 {
     position: absolute;
-    top: 35%; /* Adjusted higher */
+    top: 15%; /* Adjusted higher */
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
